@@ -15,7 +15,7 @@ module.exports = function() {
     const normalize = input =>
         Array.isArray(input) ? input.map(item => item.toLowerCase().trim()) : input.toLowerCase().trim();
 
-    //Allow CORS!
+    // //Allow CORS!
     app.use( (req, res, next) => {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -61,7 +61,7 @@ module.exports = function() {
 
                         matchingEntries = matchingEntries.filter( gnome => {
                             gnomeProfessions = normalize(gnome.professions);
-                            return inputProfessions.every(inputProfessions, prof => gnomeProfessions.includes( prof ) );
+                            return inputProfessions.every( prof => gnomeProfessions.includes( prof ) );
                         });
                     }
 

@@ -8,7 +8,8 @@
             restrict: "E",
             templateUrl: "pagination.html",
             controller: function(ListService, FilterService) {
-                var self = this;
+
+                const self = this;
                 self.numbersList = [];
                 self.data = ListService.data;
                 self.filter = FilterService;
@@ -55,7 +56,7 @@
             restrict: "E",
             templateUrl: "gnome-tabs.html",
             controller: function() {
-                var self = this;
+                const self = this;
                 self.tab = 1;
 
                 self.setTab = function(newValue) {
@@ -87,7 +88,7 @@
             restrict: "E",
             templateUrl: "gnome-filter.html",
             controller: function(ListService, FilterService) {
-                var self = this;
+                const self = this;
                 self.filter = FilterService;
                 self.filter.data.itemsPerPage = 3;
 
@@ -105,7 +106,7 @@
             restrict: "E",
             templateUrl: "gnome-list.html",
             controller: function(ListService) {
-                var self = this;
+                const self = this;
                 ListService.request({
                     itemsPerPage: 3
                 });

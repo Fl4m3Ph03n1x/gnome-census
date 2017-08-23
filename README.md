@@ -4,14 +4,11 @@
 This is a small demo project that uses a sample backend server using Nodejs and
 a front-end interface using Angular 1.
 
-##  Run server locally
+##  Run the project
 
-1. Clone the reop
+1. Clone the repo
 2. npm install
 3. npm start
 4. Have fun!
 
-## Front-end client
-
-For your amusement, the front-end client is currently connected to a Cloud9
-server. So technically, you don't need to run the server locally.
+The demo server is now running in localhost:3000 and the client in localhost:8080.

@@ -4,7 +4,9 @@
   "description": "Front-end project in Angular1 for a gnome census webpage.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start-server": "PORT=3000 node index.js",
+    "start-client": "./node_modules/http-server/bin/http-server client/",
+    "start":  "concurrently --kill-others \"npm run start-server\" \"npm run start-client\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "eslint": "^4.5.0"
+    "concurrently": "^3.5.0",
+    "eslint": "^4.5.0",
+    "http-server": "^0.10.0"
   }
 }
