@@ -1,8 +1,8 @@
 /*global angular*/
 
 (function() {
-    var app = angular.module("census-elements", ["census-services"]);
-    
+    const app = angular.module("census-elements", ["census-services"]);
+
     app.directive("pagination", function() {
         return {
             restrict: "E",
@@ -57,7 +57,7 @@
             controller: function() {
                 var self = this;
                 self.tab = 1;
-                
+
                 self.setTab = function(newValue) {
                     self.tab = newValue;
                 };
@@ -65,15 +65,15 @@
                 self.isSet = function(tabName) {
                     return self.tab === tabName;
                 };
-                
+
                 self.hasFriends = function(gnome){
                     return gnome.friends.length > 0;
                 };
-                
+
                 self.hasJobs = function(gnome){
                     return gnome.professions.length > 0;
                 };
-                
+
                 self.getGender = function(gnome){
                     return gnome.gender.gender || "?";
                 };

@@ -1,0 +1,33 @@
+{
+  "name": "gnome-census",
+  "version": "1.0.0",
+  "description": "Front-end project in Angular1 for a gnome census webpage.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fl4m3Ph03n1x/gnome-census.git"
+  },
+  "keywords": [
+    "gnome-census",
+    "front-end",
+    "angular1"
+  ],
+  "author": "Pedro Miguel Pereira Serrano Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fl4m3Ph03n1x/gnome-census/issues"
+  },
+  "homepage": "https://github.com/Fl4m3Ph03n1x/gnome-census#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "gender-guess": "^1.0.4",
+    "http-status": "^1.0.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0"
+  }
+}
