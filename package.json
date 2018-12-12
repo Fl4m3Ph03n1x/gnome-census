@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/Fl4m3Ph03n1x/gnome-census#readme",
   "dependencies": {
-    "express": "^4.15.4",
+    "express": "^4.16.0",
     "gender-guess": "^1.0.4",
     "http-status": "^1.0.1",
-    "request": "^2.81.0"
+    "request": "^2.84.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
