@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Fl4m3Ph03n1x/gnome-census#readme",
   "dependencies": {
-    "express": "^4.16.0",
+    "express": "^4.19.2",
     "gender-guess": "^1.0.4",
     "http-status": "^1.0.1",
     "request": "^2.84.0"
